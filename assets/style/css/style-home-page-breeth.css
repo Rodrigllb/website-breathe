@@ -1,0 +1,78 @@
+@charset "UTF-8"; /*Compatibilidade de caracteres.*/
+
+@font-face { /*Adicionando importando fonte localmente.*/
+    font-family: 'FuturaFont';
+    src: url('../../font/futura/Futura\ Book\ font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}  
+
+/*Reset*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Configurações globais*/
+body{
+    font-family: 'FuturaFont', Arial, sans-serif;
+    color: #252525;
+}
+p{
+    font-size: 12pt;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 12pt;
+}
+a{
+    text-decoration: none;
+}
+
+#container{ /*Container principal do site.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.container-menu-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+    background-color: #2196f3;
+}
+.container-menu-nav a{
+    color: #fff;
+}
+
+.container-header{ /*Container de cabeçalho.*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.element-logotype{ /*Elemento que encapsula a logo do site.*/
+    transition: 0.5s ease;
+    width: 255px;
+    height: auto;
+}
+.element-logotype:hover{
+    transition: 0.5s ease;
+    opacity: 70%;
+}
+
+.container-content-main{/*Container do conteúdo principal da webpage.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35em;
+    height: auto;
+}
