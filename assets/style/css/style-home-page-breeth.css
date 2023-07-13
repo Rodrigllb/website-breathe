@@ -17,6 +17,7 @@ body{
 body{
     font-family: 'FuturaFont', Arial, sans-serif;
     color: #252525;
+    background-color: #2196f3;
 }
 p{
     font-size: 12pt;
@@ -35,20 +36,6 @@ a{
     align-items: center;
     width: 100%;
     height: auto;
-}
-
-.container-menu-nav{ /*Container que encapsula os links de navegação iniciais.*/
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 2em;
-    background-color: #2196f3;
-}
-.container-menu-nav a{
-    margin: 0px 50px 0px 50px;
-    color: #fff;
 }
 
 .container-header{ /*Container de cabeçalho.*/
@@ -76,5 +63,60 @@ a{
     align-items: center;
     width: 35em;
     height: auto;
-    
+}
+
+.element-img-design{/*Elemento que encapsula imagem de nuvem.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+}
+
+.container-interface-breeth{ /*Container que encapsula a interface de respiração.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 27em;
+    height: 27em;
+    margin: 25px 0px 25px 0px;
+}
+.element-circule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22em;
+    height: 22em;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+.circle-effect{
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: effect-waiting 1.5s backwards infinite;
+}
+@keyframes effect-waiting {
+    0%{
+        transition: 0.5s ease;
+        transform: scale(1);
+        opacity: 50%;
+    }
+    50%{
+        transition: 0.5s ease;
+        
+        opacity: 15%;
+    }
+    100%{
+        transform: 0.5s ease;
+        transform: scale(1.4);
+        opacity: 0%;
+    }
+
 }
