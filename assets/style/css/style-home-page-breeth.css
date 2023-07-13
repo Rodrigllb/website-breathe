@@ -18,7 +18,19 @@ body{
     font-family: 'FuturaFont', Arial, sans-serif;
     color: #252525;
     background-color: #2196f3;
+    animation: effect-noturne 7s forwards;
 }
+@keyframes effect-noturne {
+    0%{
+        transition: 0.5s ease;
+        background-color: #2196f3;
+    }
+    100%{
+        transform: 0.5s ease;
+        background-color: #0069be;
+    }
+}
+
 p{
     font-size: 12pt;
 }
@@ -85,28 +97,39 @@ a{
     margin: 25px 0px 25px 0px;
 }
 .element-circule{
+    transition: 0.5s ease;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 22em;
-    height: 22em;
+    width: 25em;
+    height: 25em;
+    border: none;
     border-radius: 50%;
     background-color: #fff;
 
 }
+.element-circule:hover{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
 .circle-effect{
-    width: 19em;
-    height: 19em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23em;
+    height: 23em;
+    border: solid #fff;
     border-radius: 50%;
-    background-color: #fff;
-    animation: effect-waiting 1.5s backwards infinite;
+
+    animation: effect-waiting 1.5s infinite;
 }
 @keyframes effect-waiting {
     0%{
         transition: 0.5s ease;
         transform: scale(1);
-        opacity: 50%;
+        opacity: 30%;
     }
     50%{
         transition: 0.5s ease;
