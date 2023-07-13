@@ -33,6 +33,7 @@ body{
 
 p{
     font-size: 12pt;
+    text-align: justify;
 }
 h1, h2, h3, h4, h5, h6{
     font-size: 12pt;
@@ -82,9 +83,14 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    
 
+}
+.element-img-design p {
+    width: 300px;
+    color: #fff;
 }
 
 .container-interface-breeth{ /*Container que encapsula a interface de respiração.*/
