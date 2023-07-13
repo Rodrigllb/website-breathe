@@ -20,7 +20,7 @@ body{
     background-color: #2196f3;
     animation: effect-noturne 7s forwards;
 }
-@keyframes effect-noturne {
+@keyframes effect-noturne { /*Animação com o objetivo de mudar a cor do fundo de todo o corpo da página para uma cor mais escura com uma trasição.*/
     0%{
         transition: 0.5s ease;
         background-color: #2196f3;
