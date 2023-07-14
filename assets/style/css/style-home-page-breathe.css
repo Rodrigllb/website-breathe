@@ -98,7 +98,7 @@ a{
     height: 27em;
     margin: 25px 0px 25px 0px;
 }
-.element-circule{
+.element-circule{/*Elemento estetico que define o "botão circular central" para o usuário interagir.*/
     transition: 0.5s ease;
     display: flex;
     flex-direction: column;
@@ -115,7 +115,7 @@ a{
     transition: 0.5s ease;
     transform: scale(1.05);
 }
-.circle-effect{
+.circle-effect-animation{/*Elemento responsável pelo efeito de animação presente.*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,7 +124,6 @@ a{
     height: 21em;
     border: solid #fff;
     border-radius: 50%;
-
     animation: effect-waiting 1.5s infinite;
 }
 @keyframes effect-waiting {
