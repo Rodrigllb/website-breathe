@@ -5,7 +5,13 @@
     src: url('../../font/futura/Futura\ Book\ font.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}  
+} 
+@font-face {
+    font-family: 'FuturaFont-bold';
+    src: url(../../font/futura/Futura\ Extra\ Black\ font.ttf);
+    font-weight: normal;
+    font-style: normal;
+} 
 
 /*Reset*/
 body{
@@ -17,18 +23,7 @@ body{
 body{
     font-family: 'FuturaFont', Arial, sans-serif;
     color: #252525;
-    background-color: #2196f3;
-    animation: effect-noturne 7s forwards;
-}
-@keyframes effect-noturne { /*Animação com o objetivo de mudar a cor do fundo de todo o corpo da página para uma cor mais escura com uma trasição.*/
-    0%{
-        transition: 0.5s ease;
-        background-color: #2196f3;
-    }
-    100%{
-        transform: 0.5s ease;
-        background-color: #0069be;
-    }
+    background-color: #007de4;
 }
 
 p{
@@ -36,7 +31,7 @@ p{
     text-align: justify;
 }
 h1, h2, h3, h4, h5, h6{
-    font-size: 12pt;
+    color: #ffffff;
 }
 a{
     text-decoration: none;
@@ -78,22 +73,23 @@ a{
     height: auto;
 }
 
-.element-img-design{/*Elemento que encapsula imagem de nuvem.*/
+.element-text-description{/*Elemento que encapsula imagem de nuvem.*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 300px;
+    height: 150px;
     
 
 }
-.element-img-design p {
+.element-text-description p {
+    text-align: center;
     width: 300px;
     color: #fff;
 }
 
-.container-interface-breeth{ /*Container que encapsula a interface de respiração.*/
+.container-interface-breathe{ /*Container que encapsula a interface de respiração.*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,8 +104,8 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 25em;
-    height: 25em;
+    width: 22em;
+    height: 22em;
     border: none;
     border-radius: 50%;
     background-color: #fff;
@@ -124,8 +120,8 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 23em;
-    height: 23em;
+    width: 21em;
+    height: 21em;
     border: solid #fff;
     border-radius: 50%;
 
