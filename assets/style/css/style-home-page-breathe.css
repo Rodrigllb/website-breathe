@@ -95,7 +95,7 @@ a{
     justify-content: center;
     align-items: center;
     width: 27em;
-    height: 27em;
+    height: auto;
     margin: 25px 0px 25px 0px;
 }
 .element-circule{/*Elemento estetico que define o "botão circular central" para o usuário interagir.*/
@@ -143,4 +143,18 @@ a{
         opacity: 0%;
     }
 
+}
+
+.element-panel-control{/*Elemento que encapsula os botões para iniciar, pausar e parar.*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15em;
+    height: 4em;
+    margin: 34px 0px 32px 0px;
+    background-color: #ffffff31;
+}
+.element-panel-control p{
+    margin: 0px 12px 0px 12px;
 }
