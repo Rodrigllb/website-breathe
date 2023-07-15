@@ -115,7 +115,7 @@ a{
     transition: 0.5s ease;
     transform: scale(1.05);
 }
-.circle-effect-animation{/*Elemento responsável pelo efeito de animação presente.*/
+.circle-effect-animation{/*Elemento responsável pelo efeito de animação presentes*/
     display: flex;
     flex-direction: column;
     justify-content: center;
