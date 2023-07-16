@@ -139,15 +139,17 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 6em;
+    width: 9em;
     height: 4em;
     margin: 56px 0px 32px 0px;
     border-radius: 29px;
     background-color: #ffffff17;
 }
-
+#img-button-stop{
+    display: none;
+}
 .element-panel-control:hover{
     transition: 0.3s;
-    width: 6em;
-    background-color: #ffffff41;
+    width: 9em;
+    background-color: #00152541;
 }
