@@ -98,9 +98,20 @@ a{
     height: auto;
     margin: 25px 0px 25px 0px;
 }
-.element-circule{/*Elemento estetico que define o "botão circular central" para o usuário interagir.*/
+
+#text-element{
     transition: 0.5s ease;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 18em;
+    height: 18em;
+}
+
+#animation-element-circle{/*Elemento estetico que define o "botão circular central" para o usuário interagir.*/
+    transition: 0.5s ease;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -110,39 +121,16 @@ a{
     border-radius: 50%;
     background-color: #fff;
 
+    animation: animation-breathe 5s alternate infinite ;
+
 }
-.element-circule:hover{
-    transition: 0.5s ease;
-    transform: scale(1.05);
-}
-.circle-effect-animation{/*Elemento responsável pelo efeito de animação presentes*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 16em;
-    height: 16em;
-    border: solid #fff;
-    border-radius: 50%;
-    animation: effect-waiting 1.5s infinite;
-}
-@keyframes effect-waiting {
+@keyframes animation-breathe {
     0%{
-        transition: 0.5s ease;
-        transform: scale(1);
-        opacity: 30%;
-    }
-    50%{
-        transition: 0.5s ease;
-        
-        opacity: 15%;
+        transform: scale(0.3);
     }
     100%{
-        transform: 0.5s ease;
-        transform: scale(1.4);
-        opacity: 0%;
+        transform: scale(1.0);
     }
-
 }
 
 .element-panel-control{/*Elemento que encapsula os botões para iniciar, pausar e parar.*/
@@ -160,6 +148,6 @@ a{
 
 .element-panel-control:hover{
     transition: 0.3s;
-    width: 8em;
+    width: 6em;
     background-color: #ffffff41;
 }
