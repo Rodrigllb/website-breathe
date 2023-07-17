@@ -21,6 +21,7 @@ body{
 
 /*Configurações globais*/
 body{
+    transition: 5s ease;
     font-family: 'FuturaFont', Arial, sans-serif;
     color: #252525;
     background-color: #007de4;
@@ -95,41 +96,41 @@ a{
     justify-content: center;
     align-items: center;
     width: 27em;
-    height: auto;
+    height: 15em;
     margin: 25px 0px 25px 0px;
 }
 
-#text-element{
-    transition: 0.5s ease;
+.container-space-circle{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: left;
     align-items: center;
     width: 18em;
-    height: 18em;
+    height: 2em;
+    padding: 5px;
+    border-radius: 25px;
+    background-color: #ffffff36;
 }
 
-#animation-element-circle{/*Elemento estetico que define o "botão circular central" para o usuário interagir.*/
+#animation-element-circle{/*Elemento estetico que define a "interface circular central".*/
     transition: 0.5s ease;
     display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 18em;
-    height: 18em;
-    border: none;
+    position: relative;
+    width: 2em;
+    height: 2em;
     border-radius: 50%;
     background-color: #fff;
 
-    animation: animation-breathe 5s alternate infinite ;
+    animation: animation-breathe 9s alternate infinite ease-in-out;
 
 }
 @keyframes animation-breathe {
     0%{
-        transform: scale(0.3);
+        transform: translateX(0px);
     }
+    
     100%{
-        transform: scale(1.0);
+        transform: translateX(16em);
     }
 }
 
@@ -141,15 +142,15 @@ a{
     align-items: center;
     width: 9em;
     height: 4em;
-    margin: 56px 0px 32px 0px;
+    margin: 56px 0px 56px 0px;
     border-radius: 29px;
     background-color: #ffffff17;
 }
-#img-button-stop{
+#img-button-stop{/*Icone de botão "stop" é exibido quando o de iniciar for clicado.*/
     display: none;
 }
 .element-panel-control:hover{
     transition: 0.3s;
     width: 9em;
-    background-color: #00152541;
+    background-color: #ffffff41;
 }
