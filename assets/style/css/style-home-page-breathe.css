@@ -93,19 +93,12 @@ a{
 .container-guide-breathe{ /*Container que encapsula o guia para o usuario respirar corretamente conforme a animação.*/
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 18em;
-    height: 5em;
-    color: #fff;
-}
-.element-guide-steps{
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
     width: 18em;
     height: 1em;
+    color: #fff;
 }
+
 .container-interface-breathe{ /*Container que encapsula a interface de respiração.*/
     display: flex;
     flex-direction: column;
