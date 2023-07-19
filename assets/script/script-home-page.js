@@ -3,7 +3,6 @@ const stopButton = document.getElementById('img-button-stop');/*Botão de parar 
 const elementBreathe = document.getElementById('animation-element-circle');/*Elemento da animação. */
 const colorBody = document.body;
 
-
 function startButtonCLicking(){
     colorBody.style.backgroundColor = '#001527';/*Mudo para uma cor mais profunda. */
     elementBreathe.style.display ='flex';/*Exibo a animação*/

@@ -148,7 +148,7 @@ a{
 
 }
 
-.element-panel-control{/*Elemento que encapsula os botões para iniciar, pausar e parar.*/
+#element-panel-control{/*Elemento que encapsula os botões para iniciar, pausar e parar.*/
     transition: 0.3s;
     display: flex;
     flex-direction: row;
@@ -159,15 +159,16 @@ a{
     margin: 56px 0px 56px 0px;
     border-radius: 29px;
     background-color: #ffffff17;
+    
 }
 #img-button-start{/*Icone de botão "Start" que é escondido quando o mesmo é clicado*/
+    transition: 0.3s;
     display: flex;
 }
 #img-button-stop{/*Icone de botão "stop" é exibido quando o de iniciar for clicado.*/
+    transition: 0.3s;
     display: none;
 }
-.element-panel-control:hover{
-    transition: 0.3s;
-    width: 9em;
-    background-color: #ffffff41;
-}
+
+
+
