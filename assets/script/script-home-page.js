@@ -4,12 +4,11 @@ const elementBreathe = document.getElementById('animation-element-circle');/*Ele
 const colorBody = document.body;
 
 function startButtonCLicking(){
-    colorBody.style.backgroundColor = '#001527';/*Mudo para uma cor mais profunda. */
+    colorBody.style.backgroundColor = '#10181f';/*Mudo para uma cor mais profunda. */
     elementBreathe.style.display ='flex';/*Exibo a animação*/
     startButton.style.display = "none";/*Escondo o botão de iniciar*/
     stopButton.style.display = "flex";/*Exibo o botão de parar */
-    var exesong = new Audio('../../Audio/brathe - Maconi Union - Weightless.mp3');
-
+    
 }
 function stopButtonClicking(){
     colorBody.style.backgroundColor = '#007de4'/*Exibo a cor inicial novamente. */
