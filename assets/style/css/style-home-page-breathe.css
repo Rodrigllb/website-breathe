@@ -24,7 +24,7 @@ body{
     transition: 5s ease;
     font-family: 'FuturaFont', Arial, sans-serif;
     color: #252525;
-    background-color: #007de4;
+    background-color: #10181f;
 }
 
 p{
@@ -32,7 +32,7 @@ p{
     text-align: justify;
 }
 h1, h2, h3, h4, h5, h6{
-    color: #ffffff;
+    color: #252525;
 }
 a{
     text-decoration: none;
@@ -70,8 +70,12 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 35em;
+    width: 25em;
     height: auto;
+    margin: 25px 0px 0px 0px;
+    border: none;
+    border-radius: 45px;
+    background-color: #fff;
 }
 
 .element-text-description{/*Elemento que encapsula imagem de nuvem.*/
@@ -87,7 +91,7 @@ a{
 .element-text-description p {
     text-align: center;
     width: 300px;
-    color: #fff;
+
 }
 
 .container-guide-breathe{ /*Container que encapsula o guia para o usuario respirar corretamente conforme a animação.*/
@@ -96,7 +100,6 @@ a{
     justify-content: space-around;
     width: 18em;
     height: 1em;
-    color: #fff;
 }
 
 .container-interface-breathe{ /*Container que encapsula a interface de respiração.*/
@@ -118,7 +121,7 @@ a{
     height: 2em;
     padding: 5px;
     border-radius: 25px;
-    background-color: #ffffff36;
+    background-color: #10181f;
 }
 
 #animation-element-circle{/*Elemento estetico que define a "interface circular central".*/
@@ -153,11 +156,11 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 9em;
+    width: 6em;
     height: 4em;
     margin: 56px 0px 56px 0px;
     border-radius: 29px;
-    background-color: #ffffff17;
+    background-color: #10181f;
     
 }
 #img-button-start{/*Icone de botão "Start" que é escondido quando o mesmo é clicado*/

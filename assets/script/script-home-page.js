@@ -1,20 +1,15 @@
 const startButton = document.getElementById('img-button-start');/*Botão de iniciar a animação */
 const stopButton = document.getElementById('img-button-stop');/*Botão de parar a animação. */
 const elementBreathe = document.getElementById('animation-element-circle');/*Elemento da animação. */
-const colorBody = document.body;
-const audioplay = document.getElementsByTagName('audio');
 
 
 function startButtonCLicking(){
-    colorBody.style.backgroundColor = '#10181f';/*Mudo para uma cor mais profunda. */
     elementBreathe.style.display ='flex';/*Exibo a animação*/
     startButton.style.display = "none";/*Escondo o botão de iniciar*/
     stopButton.style.display = "flex";/*Exibo o botão de parar */
-    audioplay.style.width = "55px;"
     
 }
 function stopButtonClicking(){
-    colorBody.style.backgroundColor = '#007de4'/*Exibo a cor inicial novamente. */
     elementBreathe.style.display ='none';/*Retiro a animação*/
     startButton.style.display = "flex"; /*Exibo novamente o botão de iniciar*/
     stopButton.style.display = "none";/*Escondo o botão de stop*/
