@@ -75,7 +75,6 @@ a{
     margin: 25px 0px 0px 0px;
     border: none;
     border-radius: 45px;
-    background-color: #fff;
 }
 
 .element-text-description{/*Elemento que encapsula imagem de nuvem.*/
@@ -85,14 +84,26 @@ a{
     align-items: center;
     width: 300px;
     height: 250px;
-    padding: 2em;
-    
+    padding: 0em;
 
 }
 .element-text-description p {
     text-align: center;
     width: 300px;
 
+}
+
+.interface-breathe-main{/*Interface principal da animação de respiração.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25em;
+    height: auto;
+    margin: 25px 0px 0px 0px;
+    border: none;
+    border-radius: 45px;
+    background-color: #fff;
 }
 
 .container-guide-breathe{ /*Container que encapsula o guia para o usuario respirar corretamente conforme a animação.*/

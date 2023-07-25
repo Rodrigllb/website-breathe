@@ -14,29 +14,31 @@
             <a href="#"><img src="assets/style/image/logo-breathe.png" alt="skyblue-logo-website"></a>
            </div>
         </header>
-        <main class="container-content-main">
-            <section class="element-text-description">
-                <img id="icon-relax" src="assets/style/image/icons/black-icon-relax.png" alt="">
-                <p>Apenas respire... Diminua os níveis de ansiedade com a técnica de respiração desacelerada!</p>
-                <p>Respire conforme a movimentação da bolinha. <br>Ao retornar, inspire novamente segure e expire.</p>
-            </section>
-            <section class="container-guide-breathe">
-                <p>Inspire</p>
-                <p>Segure</p>
-                <p>Expire</p>
-            </section>
-            <section class="container-interface-breathe">   
-                <div class="container-space-circle">
-                    <div id="animation-element-circle">
-    
+        <main class="container-content-main"><!--Container principal-->
+            <div class="interface-breathe-main"><!--Interface principal-->
+                <section class="element-text-description">
+                    <img id="icon-relax" src="assets/style/image/icons/black-icon-relax.png" alt="">
+                    <p>Apenas respire... Diminua os níveis de ansiedade com a técnica de respiração desacelerada!</p>
+                    <p>Respire conforme a movimentação da bolinha. <br>Ao retornar, inspire novamente segure e expire.</p>
+                </section>
+                <section class="container-guide-breathe"><!--Container guia de respiração.-->
+                    <p>Inspire</p>
+                    <p>Segure</p>
+                    <p>Expire</p>
+                </section>
+                <section class="container-interface-breathe"><!--Container que encapsula a animação.-->
+                    <div class="container-space-circle">
+                        <div id="animation-element-circle">
+                            <!--Elemento de animação.-->
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
+            <div id="element-panel-control"><!--Painel de controle que inicia a animação.-->
+                <img id="img-button-start" src="assets/style/image/icons/black-icon-start.png" alt="icon button start">
+                <img id="img-button-stop" src="assets/style/image/icons/black-icon-stop.png" alt="icon button stop">
+            </div>
         </main>
-        <div id="element-panel-control">
-            <img id="img-button-start" src="assets/style/image/icons/black-icon-start.png" alt="icon button start">
-            <img id="img-button-stop" src="assets/style/image/icons/black-icon-stop.png" alt="icon button stop">
-        </div>
     </div>
     <!--------------------------Script!--------------------->
     <script src="assets/script/script-home-page.js"></script>
