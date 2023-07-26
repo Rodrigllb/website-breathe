@@ -1,3 +1,4 @@
 icon start: link: https://icons8.com/icons/set/start
 icon pause: link: https://icons8.com/icons/set/stop
 style font: link: https://freefontsfamily.com/futura-font-family-free/
+icon rain sound: Link: https://icons8.com/icons/set/rain-sound
