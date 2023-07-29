@@ -78,6 +78,19 @@ a{
     border-radius: 45px;
 }
 
+.interface-breathe-main{/*Interface principal da animação de respiração.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23em;
+    height: auto;
+    margin: 25px 0px 0px 0px;
+    border: none;
+    border-radius: 45px;
+    background-color: #fff;
+}
+
 .element-text-description{/*Elemento que encapsula imagem de nuvem.*/
     display: flex;
     flex-direction: column;
@@ -177,14 +190,19 @@ a{
     transition: 0.3s;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 15em;
+    width: 10em;
     height: 5em;
     margin: 56px 0px 56px 0px;
-    border-radius: 25px;
+    border: solid #ffffff3d 1px;
+    border-radius: 50px;
     
     
+}
+.element-panel-control:hover{
+    transition: 0.3s;
+    width: 12em;
 }
 .img-button-start{/*Icone de botão "Start" que é escondido quando o mesmo é clicado*/
     transition: 0.3s;
@@ -200,14 +218,21 @@ a{
     background-color: #fff;
     border-radius: 50%;
 }
-.rainsound{
+.StartRainSound{/*Exibir o player de musica.*/
     transition: 0.3s;
     display: flex;
     padding: 14px;
     background-color: #fff;
     border-radius: 50%;
 }
-.element-audio{
+.stopRainSound{/*Botão para fechar esconder o player de music*/
+    transition: 0.3s;
+    display: none;
+    padding: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.element-audio{/*Painel de audio.*/
     display: none;
     background-color: #fff;
     margin: 7px 0px 7px 0px;
