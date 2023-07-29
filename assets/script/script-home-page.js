@@ -1,8 +1,8 @@
-const startButton = document.getElementById('img-button-start');/*Botão de iniciar a animação */
-const stopButton = document.getElementById('img-button-stop');/*Botão de parar a animação. */
-const elementBreathe = document.getElementById('animation-element-circle');/*Elemento da animação. */
-const soundRainButton = document.getElementById('rainsound');/*Botão para iniciar um som de chuva ao fundo.*/
-const elementPanelAudio = document.getElementById('element-audio');
+const startButton = document.querySelector('.img-button-start');/*Botão de iniciar a animação */
+const stopButton = document.querySelector('.img-button-stop');/*Botão de parar a animação. */
+const elementBreathe = document.querySelector('.animation-element-circle');/*Elemento da animação. */
+const soundRainButton = document.querySelector('.rainsound');/*Botão para iniciar um som de chuva ao fundo.*/
+const elementPanelAudio = document.querySelector('.element-audio');
 
 function startButtonCLicking(){
     elementBreathe.style.display ='flex';/*Exibo a animação*/

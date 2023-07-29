@@ -136,7 +136,7 @@ a{
     background-color: #10181f;
 }
 
-#animation-element-circle{/*Elemento estetico que define a "interface circular central".*/
+.animation-element-circle{/*Elemento estetico que define a "interface circular central".*/
     transition: 0.5s ease;
     display: none;
     position: relative;
@@ -162,7 +162,7 @@ a{
 
 }
 
-#element-panel-control{/*Elemento que encapsula os botões para iniciar, pausar e parar.*/
+.element-panel-control{/*Elemento que encapsula os botões para iniciar, pausar e parar.*/
     transition: 0.3s;
     display: flex;
     flex-direction: row;
@@ -175,30 +175,87 @@ a{
     
     
 }
-#img-button-start{/*Icone de botão "Start" que é escondido quando o mesmo é clicado*/
+.img-button-start{/*Icone de botão "Start" que é escondido quando o mesmo é clicado*/
     transition: 0.3s;
     display: flex;
     padding: 14px;
     background-color: #fff;
     border-radius: 50%;
 }
-#img-button-stop{/*Icone de botão "stop" é exibido quando o de iniciar for clicado.*/
+.img-button-stop{/*Icone de botão "stop" é exibido quando o de iniciar for clicado.*/
     transition: 0.3s;
     display: none;
     padding: 14px;
     background-color: #fff;
     border-radius: 50%;
 }
-#rainsound{
+.rainsound{
     transition: 0.3s;
     display: flex;
     padding: 14px;
     background-color: #fff;
     border-radius: 50%;
 }
-#element-audio{
+.element-audio{
     display: none;
     background-color: #fff;
     margin: 7px 0px 7px 0px;
     background-color: transparent;
+}
+
+
+/***************breakpoints********************/
+
+/* Breakpoint para telas menores */
+@media (max-width: 768px) {
+    .container-content-main {
+        width: 750px;
+    }
+
+    .element-text-description {
+        width: 250px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+}
+
+@media (max-width: 375px) {/*Telas com 375px de largura.*/
+    .container-content-main {
+        width: 355px;
+    }
+
+    .element-text-description {
+        width: 250px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+}
+@media (max-width: 360px){ /*Telas com 360px de largura.*/
+    .container-content-main {
+        width: 345px;
+    }
+
+    .element-text-description {
+        width: 250px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
 }
