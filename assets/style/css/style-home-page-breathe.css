@@ -88,7 +88,7 @@ a{
     margin: 25px 0px 0px 0px;
     border: none;
     border-radius: 45px;
-    background-color: #fff;
+    color: #fff;
 }
 
 .element-text-description{/*Elemento que encapsula imagem de nuvem.*/
@@ -101,33 +101,11 @@ a{
     padding: 0em;
 
 }
-.icon-relax{
-    width: 45px;
-    height: 45px;
-    transition: 0.5s ease-in;
 
-}
-.icon-relax:hover{
-    transition: 0.5s ease;
-    background-color: #e6e6e6;
-}
 .element-text-description p {
     text-align: center;
     width: 300px;
 
-}
-
-.interface-breathe-main{/*Interface principal da animação de respiração.*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 25em;
-    height: auto;
-    margin: 25px 0px 0px 0px;
-    border: none;
-    border-radius: 45px;
-    background-color: #fff;
 }
 
 .container-guide-breathe{ /*Container que encapsula o guia para o usuario respirar corretamente conforme a animação.*/
@@ -157,7 +135,7 @@ a{
     height: 2em;
     padding: 5px;
     border-radius: 25px;
-    background-color: #10181f;
+    border: solid #ffffff3d 1px;
 }
 
 .animation-element-circle{/*Elemento estetico que define a "interface circular central".*/
@@ -222,21 +200,19 @@ a{
     transition: 0.3s;
     display: flex;
     padding: 14px;
-    background-color: #fff;
+    background-color: #ffff;
     border-radius: 50%;
 }
 .stopRainSound{/*Botão para fechar esconder o player de music*/
     transition: 0.3s;
     display: none;
     padding: 14px;
-    background-color: #fff;
+    background-color: #ffa500;
     border-radius: 50%;
 }
 .element-audio{/*Painel de audio.*/
     display: none;
-    background-color: #fff;
     margin: 7px 0px 7px 0px;
-    background-color: transparent;
 }
 
 

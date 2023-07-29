@@ -23,16 +23,17 @@ function stopButtonClicking(){
 }
 function soundRainClicking(){
     elementPanelAudio.style.display = 'flex';/*Mostro o player de musica.*/
-    soundRainButton.style.display = 'none';
-    stopRainSong.style.display = 'flex';
+    soundRainButton.style.display = 'none';/*Escondo o botão de iniciar*/
+    stopRainSong.style.display = 'flex';/*Exibo o botão de parar*/
 }
 function stopRainClicking(){
-    elementPanelAudio.style.display = 'none';/*Mostro o player de musica.*/
-    soundRainButton.style.display = 'flex';
-    stopRainSong.style.display = 'none';
+    elementPanelAudio.style.display = 'none';/*Escondo o player de musica.*/
+    soundRainButton.style.display = 'flex';/*Exibo o botão de esconder o player*/
+    stopRainSong.style.backgroundColor = "#ffa500";
+    stopRainSong.style.display = 'none';/*Escondo o botão de parar*/
 }
 
 startButton.addEventListener('click', startButtonCLicking);/*Quando clicar o botão em imagem ele chama a função especifica.*/
 stopButton.addEventListener('click', stopButtonClicking);/*Quando clicar o botão de stop, chamar a função de pausa.*/
 soundRainButton.addEventListener('click', soundRainClicking);/*Quando clicado o botão iniciar um som de chuva ao fundo!*/
-stopRainSong.addEventListener('click', stopRainClicking);
+stopRainSong.addEventListener('click', stopRainClicking);/*Evento para esconder o player de musica.*/
