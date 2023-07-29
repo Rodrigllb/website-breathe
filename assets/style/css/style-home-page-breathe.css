@@ -54,6 +54,7 @@ a{
     align-items: center;
     width: 100%;
     height: auto;
+    border-bottom: solid #ffffff3d 1px;
 }
 .element-logotype{ /*Elemento que encapsula a logo do site.*/
     transition: 0.5s ease;
@@ -86,6 +87,16 @@ a{
     height: 250px;
     padding: 0em;
 
+}
+.icon-relax{
+    width: 45px;
+    height: 45px;
+    transition: 0.5s ease-in;
+
+}
+.icon-relax:hover{
+    transition: 0.5s ease;
+    background-color: #e6e6e6;
 }
 .element-text-description p {
     text-align: center;
@@ -210,6 +221,23 @@ a{
 @media (max-width: 768px) {
     .container-content-main {
         width: 750px;
+    }
+
+    .element-text-description {
+        width: 250px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+}
+@media (max-width: 390px) {/*Telas com 375px de largura.*/
+    .container-content-main {
+        width: 355px;
     }
 
     .element-text-description {

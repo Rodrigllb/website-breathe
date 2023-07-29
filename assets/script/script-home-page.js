@@ -16,7 +16,7 @@ function stopButtonClicking(){
     stopButton.style.display = "none";/*Escondo o botão de stop*/
 }
 function soundRainClicking(){
-    elementPanelAudio.style.display = 'flex';
+    elementPanelAudio.style.display = 'flex';/*Mostro o player de musica.*/
     
 }
 
