@@ -10,6 +10,8 @@ const stopRainSong = document.querySelector('.stopRainSound');/*Botão de parar 
 
 const elementPanelAudio = document.querySelector('.element-audio');/*Painel de audio.*/
 
+const elementWindowFLoat = document.querySelector('.windowFloat');/*Janela flutuante de inicio.*/
+
 function startButtonCLicking(){
     elementBreathe.style.display ='flex';/*Exibo a animação*/
     startButton.style.display = "none";/*Escondo o botão de iniciar*/
@@ -31,6 +33,9 @@ function stopRainClicking(){
     soundRainButton.style.display = 'flex';/*Exibo o botão de esconder o player*/
     stopRainSong.style.backgroundColor = "#ffa500";
     stopRainSong.style.display = 'none';/*Escondo o botão de parar*/
+}
+function closedWindow(){/*Fechar janela flutuante!*/
+    elementWindowFLoat.style.display = 'none';/*Quando clicado, a janela flutuante é removida.*/
 }
 
 startButton.addEventListener('click', startButtonCLicking);/*Quando clicar o botão em imagem ele chama a função especifica.*/
