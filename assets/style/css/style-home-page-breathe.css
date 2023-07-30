@@ -48,18 +48,22 @@ a{
 .windowFloat{/*Janela flutuante de incio!*/
     display: absolute;
     position: fixed;
+    top: 5%;
+    z-index: 10;
     width: 22em;
     height: 22em;
     padding: 2em;
     border: solid #ffffff3d 1px;
     border-radius: 23px;
     background-color: rgba(255, 255, 255, 0.103);
-    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) ;
 }
 .windowFloat button{
     padding: 9px;
     border: none;
     border-radius: 25px;
+    
 }
 
 
@@ -67,10 +71,14 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    position: sticky;
+    top: 0;
     align-items: center;
     width: 100%;
     height: auto;
     border-bottom: solid #ffffff3d 1px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px) ;
 }
 .element-logotype{ /*Elemento que encapsula a logo do site.*/
     transition: 0.5s ease;
@@ -270,7 +278,70 @@ a{
         width: 345px;
     }
 }
+
+@media (max-width: 450px){ /*Telas com 360px de largura.*/
+    .windowFloat{
+        width: 15em;
+        height: 25em;
+    }
+    .container-content-main {
+        width: 345px;
+    }
+
+    .element-text-description {
+        width: 250px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+}
+
+@media (max-width: 425px){ /*Telas com 425px de largura.*/
+    .windowFloat{
+        width: 15em;
+        height: 25em;
+    }
+    .container-content-main {
+        width: 345px;
+    }
+
+    .element-text-description {
+        width: 250px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+}
+
 @media (max-width: 390px) {/*Telas com 375px de largura.*/
+    .container-content-main {
+        width: 355px;
+    }
+
+    .element-text-description {
+        width: 250px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+}
+
+@media (max-width: 380px) {/*Telas com 380px de largura.*/
     .container-content-main {
         width: 355px;
     }
@@ -306,6 +377,10 @@ a{
     }
 }
 @media (max-width: 360px){ /*Telas com 360px de largura.*/
+    .windowFloat{
+        width: 15em;
+        height: 25em;
+    }
     .container-content-main {
         width: 345px;
     }
@@ -320,5 +395,27 @@ a{
 
     .interface-breathe-main{
         width: 345px;
+    }
+}
+
+@media (max-width: 320px){ /*Telas com 320px de largura.*/
+    .windowFloat{
+        width: 13em;
+        height: 27em;
+    }
+    .container-content-main {
+        width: 320px;
+    }
+
+    .element-text-description {
+        width: 250px;
+    }
+
+    .container-interface-breathe {
+        width: 9em;
+    }
+
+    .interface-breathe-main{
+        width: 320px;
     }
 }
