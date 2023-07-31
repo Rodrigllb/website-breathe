@@ -266,6 +266,9 @@ footer{
     width: 17em;
     height: 5em;
 }
+footer small{
+    opacity: 45%;
+}
 
 /***************breakpoints********************/
 
