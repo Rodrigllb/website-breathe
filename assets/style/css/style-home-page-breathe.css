@@ -48,7 +48,7 @@ a{
 .windowFloat{/*Janela flutuante de incio!*/
     display: absolute;
     position: fixed;
-    top: 5%;
+    top: 20%;
     z-index: 10;
     width: 22em;
     height: 22em;
@@ -117,7 +117,7 @@ a{
     justify-content: center;
     align-items: center;
     width: 300px;
-    height: 250px;
+    height: 300px;
     padding: 0em;
 
 }
@@ -258,6 +258,18 @@ a{
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 17em;
+    height: 5em;
+}
+footer small{
+    opacity: 45%;
+}
+
 /***************breakpoints********************/
 
 /* Breakpoint para telas menores */
@@ -277,10 +289,15 @@ a{
     .interface-breathe-main{
         width: 345px;
     }
+
+    footer{
+        width: 768px;
+    }
 }
 
 @media (max-width: 450px){ /*Telas com 360px de largura.*/
     .windowFloat{
+        top: 9%;
         width: 15em;
         height: 25em;
     }
@@ -298,11 +315,16 @@ a{
 
     .interface-breathe-main{
         width: 345px;
+    }
+
+    footer{
+        width: 450px;
     }
 }
 
 @media (max-width: 425px){ /*Telas com 425px de largura.*/
     .windowFloat{
+        top: 5%;
         width: 15em;
         height: 25em;
     }
@@ -320,10 +342,19 @@ a{
 
     .interface-breathe-main{
         width: 345px;
+    }
+
+    footer{
+        width: 425px;
     }
 }
 
 @media (max-width: 390px) {/*Telas com 375px de largura.*/
+    .windowFloat{
+        top: 5%;
+        width: 15em;
+        height: 25em;
+    }
     .container-content-main {
         width: 355px;
     }
@@ -338,10 +369,17 @@ a{
 
     .interface-breathe-main{
         width: 345px;
+    }
+
+    footer{
+        width: 390px;
     }
 }
 
 @media (max-width: 380px) {/*Telas com 380px de largura.*/
+    .windowFloat{
+        top: 5%;
+    }
     .container-content-main {
         width: 355px;
     }
@@ -356,10 +394,17 @@ a{
 
     .interface-breathe-main{
         width: 345px;
+    }
+
+    footer{
+        width: 380px;
     }
 }
 
 @media (max-width: 375px) {/*Telas com 375px de largura.*/
+    .windowFloat{
+        top: 5%;
+    }
     .container-content-main {
         width: 355px;
     }
@@ -375,9 +420,14 @@ a{
     .interface-breathe-main{
         width: 345px;
     }
+
+    footer{
+        width: 375px;
+    }
 }
 @media (max-width: 360px){ /*Telas com 360px de largura.*/
     .windowFloat{
+        top: 3%;
         width: 15em;
         height: 25em;
     }
@@ -395,11 +445,16 @@ a{
 
     .interface-breathe-main{
         width: 345px;
+    }
+
+    footer{
+        width: 360px;
     }
 }
 
 @media (max-width: 320px){ /*Telas com 320px de largura.*/
     .windowFloat{
+        top: 2%;
         width: 13em;
         height: 27em;
     }
@@ -416,6 +471,10 @@ a{
     }
 
     .interface-breathe-main{
+        width: 320px;
+    }
+
+    footer{
         width: 320px;
     }
 }
