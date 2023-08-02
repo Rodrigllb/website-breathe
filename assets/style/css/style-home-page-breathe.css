@@ -289,6 +289,10 @@ footer small{
     .interface-breathe-main{
         width: 345px;
     }
+
+    footer{
+        width: 768px;
+    }
 }
 
 @media (max-width: 450px){ /*Telas com 360px de largura.*/
@@ -311,6 +315,10 @@ footer small{
 
     .interface-breathe-main{
         width: 345px;
+    }
+
+    footer{
+        width: 450px;
     }
 }
 
@@ -335,6 +343,10 @@ footer small{
     .interface-breathe-main{
         width: 345px;
     }
+
+    footer{
+        width: 425px;
+    }
 }
 
 @media (max-width: 390px) {/*Telas com 375px de largura.*/
@@ -358,6 +370,10 @@ footer small{
     .interface-breathe-main{
         width: 345px;
     }
+
+    footer{
+        width: 390px;
+    }
 }
 
 @media (max-width: 380px) {/*Telas com 380px de largura.*/
@@ -379,6 +395,10 @@ footer small{
     .interface-breathe-main{
         width: 345px;
     }
+
+    footer{
+        width: 380px;
+    }
 }
 
 @media (max-width: 375px) {/*Telas com 375px de largura.*/
@@ -399,6 +419,10 @@ footer small{
 
     .interface-breathe-main{
         width: 345px;
+    }
+
+    footer{
+        width: 375px;
     }
 }
 @media (max-width: 360px){ /*Telas com 360px de largura.*/
@@ -422,6 +446,10 @@ footer small{
     .interface-breathe-main{
         width: 345px;
     }
+
+    footer{
+        width: 360px;
+    }
 }
 
 @media (max-width: 320px){ /*Telas com 320px de largura.*/
@@ -443,6 +471,10 @@ footer small{
     }
 
     .interface-breathe-main{
+        width: 320px;
+    }
+
+    footer{
         width: 320px;
     }
 }
