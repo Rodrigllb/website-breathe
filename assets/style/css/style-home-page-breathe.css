@@ -56,6 +56,7 @@ a{
     border: solid #ffffff3d 1px;
     border-radius: 23px;
     background-color: rgba(255, 255, 255, 0.103);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px) ;
 }
@@ -76,6 +77,7 @@ a{
     align-items: center;
     width: 100%;
     height: auto;
+    background-color: #00000033;
     border-bottom: solid #ffffff3d 1px;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px) ;
@@ -116,14 +118,14 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 400px;
     height: 300px;
     padding: 0em;
 
 }
 
 .element-text-description p {
-    text-align: center;
+    text-align: justify;
     width: 300px;
 
 }
@@ -166,7 +168,7 @@ a{
     height: 2em;
     border-radius: 50%;
     background-color: #fff;
-
+    
     animation: animation-breathe 15s alternate infinite ease-in-out;
 
 }
@@ -174,12 +176,15 @@ a{
     0%{
         transition: 0.5s;
         transform: translateX(0em);
+        
     }
     50%{
         transform: translateX(8em);
+       
     }
     100%{
         transform: translateX(16em);
+
     }
 
 }
@@ -244,8 +249,17 @@ a{
     border-radius: 50%;
 }
 .element-audio{/*Painel de audio.*/
+    transition: 0.5s ;
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 22em;
+    height: 9em;
     margin: 7px 0px 7px 0px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    background-color: #ffffff10;
 }
 
 /*******Estilo "hover" botões para o som de chuva.******/
@@ -279,7 +293,7 @@ footer small{
     }
 
     .element-text-description {
-        width: 250px;
+        width: 370px;
     }
 
     .container-interface-breathe {
@@ -306,7 +320,7 @@ footer small{
     }
 
     .element-text-description {
-        width: 250px;
+        width: 350px;
     }
 
     .container-interface-breathe {
@@ -333,7 +347,7 @@ footer small{
     }
 
     .element-text-description {
-        width: 250px;
+        width: 350px;
     }
 
     .container-interface-breathe {
