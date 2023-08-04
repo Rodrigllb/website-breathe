@@ -99,6 +99,24 @@ a{
     border: none;
     border-radius: 45px;
 }
+.image-representation{/*Imagem de mulher que representa a ansiedade.*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 22em;
+    height: 15em;
+    border: solid #ffffff3d 1px;
+    border-radius: 34px;
+    background-image: url(../image/img-representation-anxiety.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.image-representation h1{
+    opacity: 75%;
+    margin: 1em;
+}
 
 .interface-breathe-main{/*Interface principal da animação de respiração.*/
     display: flex;
@@ -168,7 +186,7 @@ a{
     height: 2em;
     border-radius: 50%;
     background-color: #fff;
-    
+
     animation: animation-breathe 15s alternate infinite ease-in-out;
 
 }
@@ -176,15 +194,12 @@ a{
     0%{
         transition: 0.5s;
         transform: translateX(0em);
-        
     }
     50%{
         transform: translateX(8em);
-       
     }
     100%{
         transform: translateX(16em);
-
     }
 
 }
@@ -293,7 +308,7 @@ footer small{
     }
 
     .element-text-description {
-        width: 370px;
+        width: 250px;
     }
 
     .container-interface-breathe {
@@ -309,7 +324,7 @@ footer small{
     }
 }
 
-@media (max-width: 450px){ /*Telas com 360px de largura.*/
+@media (max-width: 720px){ /*Telas com 720px de largura.*/
     .windowFloat{
         top: 9%;
         width: 15em;
@@ -317,6 +332,10 @@ footer small{
     }
     .container-content-main {
         width: 345px;
+    }
+
+    .image-representation{
+        width: 18em;
     }
 
     .element-text-description {
@@ -336,7 +355,162 @@ footer small{
     }
 }
 
-@media (max-width: 425px){ /*Telas com 425px de largura.*/
+@media (max-width: 680px){ /*Telas com 360px de largura.*/
+    .windowFloat{
+        top: 9%;
+        width: 15em;
+        height: 25em;
+    }
+    .container-content-main {
+        width: 345px;
+    }
+
+    .image-representation{
+        width: 18em;
+    }
+
+    .element-text-description {
+        width: 350px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+
+    footer{
+        width: 450px;
+    }
+}
+
+@media (max-width: 660px){ /*Telas com 360px de largura.*/
+    .windowFloat{
+        top: 9%;
+        width: 15em;
+        height: 25em;
+    }
+    .container-content-main {
+        width: 345px;
+    }
+
+    .image-representation{
+        width: 18em;
+    }
+
+    .element-text-description {
+        width: 350px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+
+    footer{
+        width: 450px;
+    }
+}
+
+@media (max-width: 620px){ /*Telas com 360px de largura.*/
+    .windowFloat{
+        top: 9%;
+        width: 15em;
+        height: 25em;
+    }
+    .container-content-main {
+        width: 345px;
+    }
+
+    .image-representation{
+        width: 18em;
+    }
+
+    .element-text-description {
+        width: 350px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+
+    footer{
+        width: 450px;
+    }
+}
+
+@media (max-width: 520px){ /*Telas com 520px de largura.*/
+    .windowFloat{
+        top: 9%;
+        width: 15em;
+        height: 25em;
+    }
+    .container-content-main {
+        width: 345px;
+    }
+
+    .image-representation{
+        width: 18em;
+    }
+
+    .element-text-description {
+        width: 350px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+
+    footer{
+        width: 450px;
+    }
+}
+
+@media (max-width: 460px){ /*Telas com 360px de largura.*/
+    .windowFloat{
+        top: 9%;
+        width: 15em;
+        height: 25em;
+    }
+    .container-content-main {
+        width: 345px;
+    }
+
+    .image-representation{
+        width: 18em;
+    }
+
+    .element-text-description {
+        width: 350px;
+    }
+
+    .container-interface-breathe {
+        width: 22em;
+    }
+
+    .interface-breathe-main{
+        width: 345px;
+    }
+
+    footer{
+        width: 450px;
+    }
+}
+
+@media (max-width: 420px){ /*Telas com 420px de largura.*/
     .windowFloat{
         top: 5%;
         width: 15em;
@@ -344,6 +518,10 @@ footer small{
     }
     .container-content-main {
         width: 345px;
+    }
+
+    .image-representation{
+        width: 18em;
     }
 
     .element-text-description {
@@ -373,6 +551,10 @@ footer small{
         width: 355px;
     }
 
+    .image-representation{
+        width: 18em;
+    }
+
     .element-text-description {
         width: 250px;
     }
@@ -398,6 +580,10 @@ footer small{
         width: 355px;
     }
 
+    .image-representation{
+        width: 16em;
+    }
+
     .element-text-description {
         width: 250px;
     }
@@ -421,6 +607,10 @@ footer small{
     }
     .container-content-main {
         width: 355px;
+    }
+
+    .image-representation{
+        width: 16em;
     }
 
     .element-text-description {
@@ -449,6 +639,10 @@ footer small{
         width: 345px;
     }
 
+    .image-representation{
+        width: 16em;
+    }
+
     .element-text-description {
         width: 250px;
     }
@@ -474,6 +668,10 @@ footer small{
     }
     .container-content-main {
         width: 320px;
+    }
+
+    .image-representation{
+        width: 16em;
     }
 
     .element-text-description {
