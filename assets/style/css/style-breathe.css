@@ -186,7 +186,7 @@ a{
     height: 2em;
     border-radius: 50%;
     background-color: #fff;
-    
+
     animation: animation-breathe 15s alternate infinite ease-in-out;
 
 }
@@ -194,15 +194,12 @@ a{
     0%{
         transition: 0.5s;
         transform: translateX(0em);
-        
     }
     50%{
         transform: translateX(8em);
-       
     }
     100%{
         transform: translateX(16em);
-
     }
 
 }
@@ -311,11 +308,7 @@ footer small{
     }
 
     .element-text-description {
-        width: 370px;
-    }
-
-    .image-representation{
-        width: 20em;
+        width: 250px;
     }
 
     .container-interface-breathe {
