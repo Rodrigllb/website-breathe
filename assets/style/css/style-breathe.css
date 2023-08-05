@@ -45,7 +45,8 @@ a{
     width: 100%;
     height: auto;
 }
-.windowFloat{/*Janela flutuante de incio!*/
+
+.splash-Window-Float{/*Janela flutuante de incio!*/
     display: absolute;
     position: fixed;
     top: 20%;
@@ -60,11 +61,10 @@ a{
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px) ;
 }
-.windowFloat button{
+.splash-Window-Float button{
     padding: 9px;
     border: none;
     border-radius: 25px;
-    
 }
 
 
@@ -72,39 +72,38 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     position: sticky;
     top: 0;
-    align-items: center;
     width: 100%;
     height: auto;
     background-color: #00000033;
     border-bottom: solid #ffffff3d 1px;
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);/*compatibilidade de fundo "borrado" em alguns navegadores.*/
     backdrop-filter: blur(5px) ;
 }
 .element-logotype{ /*Elemento que encapsula a logo do site.*/
-    transition: 0.5s ease;
     width: 255px;
     height: auto;
 }
 
-.container-content-main{/*Container do conteúdo principal da webpage.*/
+.container-content{/*Container do conteúdo principal da webpage.*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 25em;
     height: auto;
-    margin: 25px 0px 0px 0px;
+    margin: 25px 0px 25px 0px;
     border: none;
     border-radius: 45px;
 }
-.image-representation{/*Imagem de mulher que representa a ansiedade.*/
+
+.element-image-representative{/*Imagem de representação a ansiedade.*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     width: 22em;
     height: 15em;
     border: solid #ffffff3d 1px;
@@ -113,12 +112,12 @@ a{
     background-position: center;
     background-repeat: no-repeat;
 }
-.image-representation h1{
+.element-image-representative h1{
     opacity: 75%;
     margin: 1em;
 }
 
-.interface-breathe-main{/*Interface principal da animação de respiração.*/
+.interface-main{/*Interface principal da animação de respiração.*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,42 +130,44 @@ a{
     color: #fff;
 }
 
-.element-text-description{/*Elemento que encapsula imagem de nuvem.*/
+.element-description{/*Elemento que encapsula a descrição.*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 300px;
+    width: 300px;
+    height: 180px;
     padding: 0em;
 
 }
-
-.element-text-description p {
+.element-description p {
     text-align: justify;
-    width: 300px;
-
+    margin: 7px 0px 7px 0px;
 }
 
-.container-guide-breathe{ /*Container que encapsula o guia para o usuario respirar corretamente conforme a animação.*/
+.container-guide{ /*Container que encapsula o guia para o usuario respirar corretamente conforme a animação.*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     width: 18em;
-    height: 1em;
+    height: 2em;
+}
+.container-guide p{
+    margin: 0px;
 }
 
-.container-interface-breathe{ /*Container que encapsula a interface de respiração.*/
+.container-animation{ /*Container que encapsula a animação.*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 27em;
     height: auto;
-    margin: 25px 0px 25px 0px;
+    margin: 7px 0px 7px 0px;
 }
 
-.container-space-circle{/*Fundo da animação.*/
+.animation-point{/*Fundo da animação.*/
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -178,7 +179,7 @@ a{
     border: solid #ffffff3d 1px;
 }
 
-.animation-element-circle{/*Elemento estetico que define a "interface circular central".*/
+.element-ball{/*Elemento estetico que define a "interface circular central".*/
     transition: 0.5s ease;
     display: none;
     position: relative;
@@ -187,10 +188,10 @@ a{
     border-radius: 50%;
     background-color: #fff;
 
-    animation: animation-breathe 15s alternate infinite ease-in-out;
+    animation: ballmovement 15s alternate infinite ease-in-out;
 
 }
-@keyframes animation-breathe {
+@keyframes ballmovement {
     0%{
         transition: 0.5s;
         transform: translateX(0em);
@@ -204,7 +205,7 @@ a{
 
 }
 
-.element-panel-control{/*Elemento que encapsula os botões para iniciar, pausar e parar.*/
+.element-control{/*Elemento que encapsula os botões para iniciar, pausar e parar.*/
     transition: 0.3s;
     display: flex;
     flex-direction: row;
@@ -217,10 +218,8 @@ a{
     border-left: solid #ffffff3d 1px;
     border-right: solid #ffffff3d 1px;
     border-radius: 50px;
-    
-    
 }
-.element-panel-control:hover{
+.element-control:hover{
     transition: 0.3s;
     width: 12em;
 }
@@ -249,7 +248,7 @@ a{
 }
 
 
-.StartRainSound{/*Exibir o player de musica.*/
+.startRainSound{/*Exibir o player de musica.*/
     transition: 0.3s;
     display: flex;
     padding: 14px;
@@ -278,7 +277,7 @@ a{
 }
 
 /*******Estilo "hover" botões para o som de chuva.******/
-.StartRainSound:hover{
+.startRainSound:hover{
     transition: 0.5s ease;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
@@ -301,391 +300,76 @@ footer small{
 
 /***************breakpoints********************/
 
-/* Breakpoint para telas menores */
+/* Estilos para telas entre 1441px e 1600px */
+@media (max-width: 1600px) {
+    /* Seus estilos aqui */
+}
+/* Estilos para telas entre 1201px e 1440px */
+@media (max-width: 1440px) {
+/* Seus estilos aqui */
+}
+/* Estilos para telas entre 1025px e 1200px */
+@media (max-width: 1200px) {
+    /* Seus estilos aqui */
+}
+/* Estilos para telas entre 769px e 1024px */
+@media (max-width: 1024px) {
+/* Seus estilos aqui */
+}
+/* Estilos para telas entre 481px e 768px */
 @media (max-width: 768px) {
-    .container-content-main {
-        width: 750px;
-    }
-
-    .element-text-description {
-        width: 250px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 768px;
-    }
+    /* Seus estilos aqui */
 }
-
-@media (max-width: 720px){ /*Telas com 720px de largura.*/
-    .windowFloat{
+/* Estilos para telas entre 321px e 480px */
+@media (max-width: 480px) {
+    .splash-Window-Float{
         top: 9%;
-        width: 15em;
-        height: 25em;
+        width: 240px;
+        height: 400px;
     }
-    .container-content-main {
-        width: 345px;
+    .container-header{
+        width: 480px;
     }
-
-    .image-representation{
-        width: 18em;
-    }
-
-    .element-text-description {
-        width: 350px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 450px;
-    }
-}
-
-@media (max-width: 680px){ /*Telas com 360px de largura.*/
-    .windowFloat{
-        top: 9%;
-        width: 15em;
-        height: 25em;
-    }
-    .container-content-main {
-        width: 345px;
-    }
-
-    .image-representation{
-        width: 18em;
-    }
-
-    .element-text-description {
-        width: 350px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 450px;
-    }
-}
-
-@media (max-width: 660px){ /*Telas com 360px de largura.*/
-    .windowFloat{
-        top: 9%;
-        width: 15em;
-        height: 25em;
-    }
-    .container-content-main {
-        width: 345px;
-    }
-
-    .image-representation{
-        width: 18em;
-    }
-
-    .element-text-description {
-        width: 350px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 450px;
-    }
-}
-
-@media (max-width: 620px){ /*Telas com 360px de largura.*/
-    .windowFloat{
-        top: 9%;
-        width: 15em;
-        height: 25em;
-    }
-    .container-content-main {
-        width: 345px;
-    }
-
-    .image-representation{
-        width: 18em;
-    }
-
-    .element-text-description {
-        width: 350px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 450px;
-    }
-}
-
-@media (max-width: 520px){ /*Telas com 520px de largura.*/
-    .windowFloat{
-        top: 9%;
-        width: 15em;
-        height: 25em;
-    }
-    .container-content-main {
-        width: 345px;
-    }
-
-    .image-representation{
-        width: 18em;
-    }
-
-    .element-text-description {
-        width: 350px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 450px;
-    }
-}
-
-@media (max-width: 460px){ /*Telas com 360px de largura.*/
-    .windowFloat{
-        top: 9%;
-        width: 15em;
-        height: 25em;
-    }
-    .container-content-main {
-        width: 345px;
-    }
-
-    .image-representation{
-        width: 18em;
-    }
-
-    .element-text-description {
-        width: 350px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 450px;
-    }
-}
-
-@media (max-width: 420px){ /*Telas com 420px de largura.*/
-    .windowFloat{
-        top: 5%;
-        width: 15em;
-        height: 25em;
-    }
-    .container-content-main {
-        width: 345px;
-    }
-
-    .image-representation{
-        width: 18em;
-    }
-
-    .element-text-description {
-        width: 350px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 425px;
-    }
-}
-
-@media (max-width: 390px) {/*Telas com 375px de largura.*/
-    .windowFloat{
-        top: 5%;
-        width: 15em;
-        height: 25em;
-    }
-    .container-content-main {
-        width: 355px;
-    }
-
-    .image-representation{
-        width: 18em;
-    }
-
-    .element-text-description {
-        width: 250px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 390px;
-    }
-}
-
-@media (max-width: 380px) {/*Telas com 380px de largura.*/
-    .windowFloat{
-        top: 5%;
-    }
-    .container-content-main {
-        width: 355px;
-    }
-
-    .image-representation{
-        width: 16em;
-    }
-
-    .element-text-description {
-        width: 250px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 380px;
-    }
-}
-
-@media (max-width: 375px) {/*Telas com 375px de largura.*/
-    .windowFloat{
-        top: 5%;
-    }
-    .container-content-main {
-        width: 355px;
-    }
-
-    .image-representation{
-        width: 16em;
-    }
-
-    .element-text-description {
-        width: 250px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 375px;
-    }
-}
-@media (max-width: 360px){ /*Telas com 360px de largura.*/
-    .windowFloat{
-        top: 3%;
-        width: 15em;
-        height: 25em;
-    }
-    .container-content-main {
-        width: 345px;
-    }
-
-    .image-representation{
-        width: 16em;
-    }
-
-    .element-text-description {
-        width: 250px;
-    }
-
-    .container-interface-breathe {
-        width: 22em;
-    }
-
-    .interface-breathe-main{
-        width: 345px;
-    }
-
-    footer{
-        width: 360px;
-    }
-}
-
-@media (max-width: 320px){ /*Telas com 320px de largura.*/
-    .windowFloat{
-        top: 2%;
-        width: 13em;
-        height: 27em;
-    }
-    .container-content-main {
+    .container-content{
         width: 320px;
     }
-
-    .image-representation{
-        width: 16em;
+    .element-image-representative{
+        width: 304px;
+    }
+    .interface-main{
+        width: 304px;
+    }
+    .element-description{
+        width: 288px;
     }
 
-    .element-text-description {
-        width: 250px;
-    }
-
-    .container-interface-breathe {
-        width: 9em;
-    }
-
-    .interface-breathe-main{
+    footer{
         width: 320px;
     }
+}    
+/* Estilos para telas menores que 320px */
+@media (max-width: 320px) {
 
+    .splash-Window-Float{
+        top: 9%;
+        width: 210px;
+        height: 410px;
+    }
+    .container-header{
+        width: 320px;
+    }
+    .container-content{
+        width: 320px;
+    }
+    .element-image-representative{
+        width: 18em;
+    }
+    .interface-main{
+        width: 304px;
+    }
+    .element-description{
+        width: 288px;
+    }
     footer{
         width: 320px;
     }
