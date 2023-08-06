@@ -35,12 +35,12 @@ function stopButtonClicking(){
 }
 function soundRainClicking(){
     elementPanelAudio.style.display = 'flex';/*Mostro o player de musica.*/
-    soundRainButton.style.display = 'none';/*Escondo o botão de iniciar*/
+    startRainSong.style.display = 'none';/*Escondo o botão de iniciar*/
     stopRainSong.style.display = 'flex';/*Exibo o botão de parar*/
 }
 function stopRainClicking(){
     elementPanelAudio.style.display = 'none';/*Escondo o player de musica.*/
-    soundRainButton.style.display = 'flex';/*Exibo o botão de esconder o player*/
+    startRainSong.style.display = 'flex';/*Exibo o botão de esconder o player*/
     stopRainSong.style.backgroundColor = "#ffa500";
     stopRainSong.style.display = 'none';/*Escondo o botão de parar*/
 }
