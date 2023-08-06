@@ -59,12 +59,23 @@ a{
     background-color: rgba(255, 255, 255, 0.103);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px) ;
+    backdrop-filter: blur(5px);
+    animation: floating alternate 3s ease infinite;
 }
 .splash-Window-Float button{
-    padding: 9px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
     border: none;
-    border-radius: 25px;
+    border-radius: 50%;
+}
+@keyframes floating {
+    0%{
+        transform: translateY(0em);
+    }
+    100%{
+        transform: translateY(1em);
+    }
 }
 
 
@@ -306,7 +317,7 @@ footer small{
     }
     
     .splash-Window-Float{
-        top: 8%;
+        top: 10%;
         width: 70%;
         height: auto;
     }
@@ -332,6 +343,12 @@ footer small{
         font-size: 16px;
     }
     
+    .splash-Window-Float{
+        top: 27%;
+        width: 70%;
+        height: auto;
+    }
+
     .container-content {
         width: 70%;
         margin: 25px 0;
